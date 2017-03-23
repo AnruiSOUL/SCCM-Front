@@ -1,0 +1,37 @@
+<!--
+  Generated template for the AbilityMethod page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ability Scores</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="abilityMethodScore">Create Score Method
+
+  <ion-item>
+    <ion-label>Manual</ion-label>
+    <ion-radio value="manual"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dice Roll</ion-label>
+    <ion-radio  value="diceRoll"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Point Buy</ion-label>
+    <ion-radio value="pointBuy"></ion-radio>
+  </ion-item> 
+  </ion-list>
+  <div *ngIf="abilityMethodScore === 'manual'">Details about Manual
+    <button (click)="goToManualScore()">Build Scores</button>
+  </div>
+ 
+</ion-content>
+
