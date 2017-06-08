@@ -19,4 +19,5 @@ export class ManualScorePage {
     console.log('ionViewDidLoad ManualScorePage');
   }
 
+
 }
