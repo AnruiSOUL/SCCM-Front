@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 import { AbilityMethodPage } from '../ability-method/ability-method';
+import {CharacterSheetsPage} from "../charactersheets/charactersheets";
 
 @Component({
   selector: 'page-home',
@@ -15,5 +16,9 @@ export class HomePage {
 
   goToAbilityMethod(){
     this.navCtrl.push(AbilityMethodPage);
+  }
+
+  goToCharacterSheets(){
+    this.navCtrl.push(CharacterSheetsPage)
   }
 }

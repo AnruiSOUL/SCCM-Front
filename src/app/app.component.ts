@@ -7,6 +7,8 @@ import { LoginPage } from '../pages/login/login';
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { AbilityMethodPage } from '../pages/ability-method/ability-method';
 import { ManualScorePage }  from '../pages/manual-score/manual-score';
+import { CharacterSheetsPage } from '../pages/charactersheets/charactersheets';
+
 @Component({
   templateUrl: 'app.html'
 })

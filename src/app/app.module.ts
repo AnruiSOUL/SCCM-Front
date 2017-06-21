@@ -6,6 +6,8 @@ import { LoginPage }from '../pages/login/login';
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { AbilityMethodPage } from '../pages/ability-method/ability-method';
 import { ManualScorePage } from '../pages/manual-score/manual-score';
+import { CharacterSheetsPage} from '../pages/charactersheets/charactersheets';
+import { CharacterSheetService } from '../services/character-sheet-service';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { ManualScorePage } from '../pages/manual-score/manual-score';
     LoginPage,
     SignUpPage,
     AbilityMethodPage,
-    ManualScorePage
+    ManualScorePage,
+    CharacterSheetsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,8 +29,9 @@ import { ManualScorePage } from '../pages/manual-score/manual-score';
     LoginPage,
     SignUpPage,
     AbilityMethodPage,
-    ManualScorePage
+    ManualScorePage,
+    CharacterSheetsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, CharacterSheetService]
 })
 export class AppModule {}
